@@ -1,9 +1,10 @@
-def test(exp, val):
+def test(val, exp):
     if (exp == val):
-        print("ok")
+        print("OK. expected %r got %r" % (exp, val))
         return True
     else:
         print("********** False ********")
+        print("Expected %r Got %r" % (exp, val))
         return False
 
 
